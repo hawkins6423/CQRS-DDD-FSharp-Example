@@ -38,6 +38,15 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MessageRouter">
+      <HintPath>..\MessageRouter\MessageRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageRouter.Interfaces">
+      <HintPath>..\MessageRouter\MessageRouter.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageRouter.Reflection">
+      <HintPath>..\MessageRouter\MessageRouter.Reflection.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Owin">
       <HintPath>..\packages\Microsoft.Owin.2.0.2\lib\net45\Microsoft.Owin.dll</HintPath>
       <Private>True</Private>
@@ -83,6 +92,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <Compile Include="Controllers.fs" />
+    <Compile Include="MessageRouter.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
